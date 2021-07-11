@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Menu extends StatelessWidget {
-  //final Function selectHandler;
   final mealText;
   final foodText;
-
+  
 
   Menu(this.mealText, this.foodText);
 
@@ -12,16 +11,13 @@ class Menu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      // ignore: deprecated_member_use
-
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(mealText),
           Text(foodText),
         ],
       ),
-        
       );
-    
   }
 }
